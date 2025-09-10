@@ -25,3 +25,6 @@ endif()
 # target_link_libraries(sim PRIVATE core)
 
 message(STATUS "Skeleton layout only. Add sources under src/, tests under tests/, etc.")
+
+# Gotta start somewhere
+add_executable(sim src/main.cpp)
