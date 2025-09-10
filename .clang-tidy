@@ -1,0 +1,3 @@
+# Minimal clang-tidy config (expand later)
+Checks: '-*,bugprone-*,performance-*,readability-*'
+WarningsAsErrors: ''
