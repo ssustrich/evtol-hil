@@ -26,5 +26,9 @@ endif()
 
 message(STATUS "Skeleton layout only. Add sources under src/, tests under tests/, etc.")
 
-# Gotta start somewhere
+add_library(sched src/sched/FixedStep.cpp)
+target_include_directories(sched PUBLIC src)
+
+# our demo app
 add_executable(sim src/main.cpp)
+target_link_libraries(sim PRIVATE sched)
